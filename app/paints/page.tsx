@@ -5,8 +5,8 @@ import React from 'react'
 const Paints = () => {
   return (
     <div>
-      <AboutProd />
       <Carousel />
+      <AboutProd />
     </div>
   )
 }

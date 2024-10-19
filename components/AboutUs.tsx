@@ -14,13 +14,22 @@ import {
 import { CheckIcon } from '@chakra-ui/icons'
 
 // Replace test data with your own
-const features = Array.apply(null, Array(8)).map(function (x, i) {
-  return {
-    id: i,
-    title: 'Lorem ipsum dolor sit amet',
-    text: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.',
-  }
-})
+const features = [{
+    id: 1,
+    title: 'Quality Guaranteed:',
+    text: 'We take pride in using the highest quality materials and employing expert craftsmanship in all our products.',
+  },
+  {
+    id: 2,
+    title: 'Customer Satisfaction:',
+    text: 'Our commitment to customer satisfaction drives us to consistently deliver excellence in both our products and services.',
+  },
+  {
+    id: 1,
+    title: 'Innovation:',
+    text: 'We stay at the forefront of industry trends and technology to bring you cutting-edge solutions.',
+  }]
+
 
 export default function AboutUs() {
   return (
@@ -28,8 +37,7 @@ export default function AboutUs() {
       <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
         <Heading fontSize={'3xl'}>Our core values</Heading>
         <Text color={'gray.600'} fontSize={'xl'}>
-          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-          tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+        Our dedication to excellence is evident in the precision and care we put into every product. Our core principles below:
         </Text>
       </Stack>
 

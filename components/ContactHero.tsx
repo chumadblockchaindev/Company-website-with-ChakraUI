@@ -23,7 +23,7 @@ export default function ContactHero() {
             fontWeight={700}
             lineHeight={1.2}
             fontSize={useBreakpointValue({ base: '3xl', md: '4xl' })}>
-            Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor
+            We are one step away. We are waiting to hear from you
           </Text>
           <Stack direction={'row'}>
             <Button
@@ -31,14 +31,14 @@ export default function ContactHero() {
               rounded={'full'}
               color={'white'}
               _hover={{ bg: 'blue.500' }}>
-              Show me more
+              Call us Now
             </Button>
             <Button
               bg={'whiteAlpha.300'}
               rounded={'full'}
               color={'white'}
               _hover={{ bg: 'whiteAlpha.500' }}>
-              Show me more
+              Chat us on Whatsapp
             </Button>
           </Stack>
         </Stack>

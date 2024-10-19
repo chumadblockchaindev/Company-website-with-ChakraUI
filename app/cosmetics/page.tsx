@@ -5,8 +5,8 @@ import React from 'react'
 const Cosmetics = () => {
   return (
     <div>
-      <AboutProd />
       <Carousel />
+      <AboutProd />
     </div>
   )
 }

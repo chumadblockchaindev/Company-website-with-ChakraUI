@@ -5,8 +5,8 @@ import React from 'react'
 const GermanFloor = () => {
   return (
     <div>
-      <AboutProd />
       <Carousel />
+      <AboutProd />
     </div>
   )
 }

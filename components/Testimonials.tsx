@@ -121,8 +121,8 @@ export default function Testimonials() {
               src={
                 'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
               }
-              name={'Jane Cooper'}
-              title={'CEO at ABC Corporation'}
+              name={'Peter Chibuike'}
+              title={'CFO Igem Designs'}
             />
           </Testimonial>
           <Testimonial>
@@ -137,8 +137,8 @@ export default function Testimonials() {
               src={
                 'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
               }
-              name={'Jane Cooper'}
-              title={'CEO at ABC Corporation'}
+              name={'Chukwuma Ezenobi'}
+              title={'CEO at Chukez Logistics'}
             />
           </Testimonial>
           <Testimonial>
@@ -153,8 +153,8 @@ export default function Testimonials() {
               src={
                 'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
               }
-              name={'Jane Cooper'}
-              title={'CEO at ABC Corporation'}
+              name={'Micheal Okopi'}
+              title={'Emmanuel Foundation'}
             />
           </Testimonial>
         </Stack>

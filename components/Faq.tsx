@@ -28,13 +28,12 @@ export default function Faq() {
               alignItems="center"
               justifyContent="space-between"
               p={4}>
-              <Text fontSize="md">What is Chakra UI?</Text>
+              <Text fontSize="md">Who are Deutchkleen?</Text>
               <ChevronDownIcon fontSize="24px" />
             </AccordionButton>
             <AccordionPanel pb={4}>
               <Text color="gray.600">
-                Chakra UI is a simple and modular component library that gives developers
-                the building blocks they need to create web applications.
+                We expertise in the production and manufacturing solutions for a diverse range of goods and services, trusted by customers nationwide.
               </Text>
             </AccordionPanel>
           </AccordionItem>
@@ -44,14 +43,12 @@ export default function Faq() {
               alignItems="center"
               justifyContent="space-between"
               p={4}>
-              <Text fontSize="md">What advantages to use?</Text>
+              <Text fontSize="md">What Products do they sell?</Text>
               <ChevronDownIcon fontSize="24px" />
             </AccordionButton>
             <AccordionPanel pb={4}>
               <Text color="gray.600">
-                Chakra UI offers a variety of advantages including ease of use,
-                accessibility, and customization options. It also provides a comprehensive
-                set of UI components and is fully compatible with React.
+                Paints, Cosmetic, We do german floor... etc
               </Text>
             </AccordionPanel>
           </AccordionItem>
@@ -61,15 +58,12 @@ export default function Faq() {
               alignItems="center"
               justifyContent="space-between"
               p={4}>
-              <Text fontSize="md">How to start using Chakra UI?</Text>
+              <Text fontSize="md">How competitive is their prices?</Text>
               <ChevronDownIcon fontSize="24px" />
             </AccordionButton>
             <AccordionPanel pb={4}>
               <Text color="gray.600">
-                To get started with Chakra UI, you can install it via npm or yarn, and
-                then import the components you need in your project. The Chakra UI
-                documentation is also a great resource for getting started and learning
-                more about the library.
+                We are manufacturing company and our and prices the best
               </Text>
             </AccordionPanel>
           </AccordionItem>

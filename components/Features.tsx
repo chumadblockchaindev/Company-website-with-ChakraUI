@@ -66,44 +66,43 @@ export default function Features() {
     <Box p={4}>
       <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
         <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
-          Short heading
+        Excellence in Production & Manufacturing
         </Heading>
         <Text color={'gray.600'} fontSize={{ base: 'sm', sm: 'lg' }}>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis obcaecati ut
-          cupiditate pariatur, dignissimos, placeat amet officiis.
+        At DEUTCHKLEEN, we pride ourselves on being a leader in the production and manufacturing of premium goods and services. Our commitment to quality, innovation, and customer satisfaction drives everything we do. Explore our wide range of high-quality products designed to meet your needs across various industries and applications.
         </Text>
       </Stack>
 
       <Container maxW={'5xl'} mt={12}>
         <Flex flexWrap="wrap" gridGap={6} justify="center">
           <Card
-            heading={'Heading'}
+            heading={'STFLUX PAINTS'}
             icon={<Icon as={FcAssistant} w={10} h={10} />}
-            description={'Lorem ipsum dolor sit amet catetur, adipisicing elit.'}
+            description={'Discover the exceptional quality of Steflux Paints, offering a range of colors and finishes that provide superior coverage and.'}
             href={'#'}
           />
           <Card
-            heading={'Heading'}
+            heading={'Perfumes'}
             icon={<Icon as={FcCollaboration} w={10} h={10} />}
-            description={'Lorem ipsum dolor sit amet catetur, adipisicing elit.'}
+            description={' Indulge in our luxurious perfumes, crafted with care to offer long-lasting, exquisite fragrances that suit every personality and occasion..'}
             href={'#'}
           />
           <Card
-            heading={'Heading'}
+            heading={'Shea Butter'}
             icon={<Icon as={FcDonate} w={10} h={10} />}
-            description={'Lorem ipsum dolor sit amet catetur, adipisicing elit.'}
+            description={'Our organic shea butter is a natural, nourishing moisturizer perfect for all skin types. Experience the richness and rejuvenation of our pure, unrefined shea butter.'}
             href={'#'}
           />
           <Card
-            heading={'Heading'}
+            heading={'Hair Cream'}
             icon={<Icon as={FcManager} w={10} h={10} />}
-            description={'Lorem ipsum dolor sit amet catetur, adipisicing elit.'}
+            description={'Keep your hair healthy and vibrant with our specially formulated hair creams. Designed to nourish and strengthen, our hair cream is suitable for all hair types.'}
             href={'#'}
           />
           <Card
-            heading={'Heading'}
+            heading={'Increte Flooring'}
             icon={<Icon as={FcAbout} w={10} h={10} />}
-            description={'Lorem ipsum dolor sit amet catetur, adipisicing elit.'}
+            description={'Transform your floors with our high-quality increte flooring solutions. Durable and stylish, our increte flooring adds beauty and longevity to any space.'}
             href={'#'}
           />
         </Flex>

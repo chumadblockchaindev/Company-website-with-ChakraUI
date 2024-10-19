@@ -44,7 +44,7 @@ export default function AboutProd() {
               Medium length title
             </chakra.h2>
             <Button colorScheme="green" size="md">
-              Call To Action
+              Chat on Whatsapp
             </Button>
           </VStack>
         </GridItem>

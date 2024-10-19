@@ -5,7 +5,6 @@ import {
   Flex,
   Text,
   IconButton,
-  Button,
   Stack,
   Collapse,
   Icon,
@@ -53,7 +52,8 @@ export default function NavBar() {
           <Text
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
-            color={useColorModeValue('gray.800', 'white')}>
+            fontSize='2xl'
+            color={useColorModeValue('slate.800', 'white')}>
             DEUTCHKLEEN
           </Text>
 

@@ -5,6 +5,7 @@ import {
   Flex,
   Heading,
   Image,
+  Link,
   Stack,
   Text,
   useBreakpointValue,
@@ -40,6 +41,7 @@ export default function Landing() {
             At Deutchkleen we expertise in the production and manufacturing solutions for a diverse range of goods and services, trusted by customers nationwide. Our dedication to excellence is evident in the precision and care we put into every product. Explore our wide range of offerings below
           </Text>
           <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
+            <Link href='/about'>
             <Button
               rounded={'full'}
               bg={'orange.400'}
@@ -49,6 +51,7 @@ export default function Landing() {
               }}>
               Learn more
             </Button>
+            </Link>
           </Stack>
         </Stack>
       </Flex>

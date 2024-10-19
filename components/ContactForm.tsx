@@ -19,7 +19,7 @@ import {
   useColorModeValue,
   VStack,
 } from '@chakra-ui/react'
-import { BsGithub, BsLinkedin, BsPerson, BsTwitter } from 'react-icons/bs'
+import { BsLinkedin, BsPerson, BsTwitter } from 'react-icons/bs'
 import { MdEmail, MdOutlineEmail } from 'react-icons/md'
 
 const confetti = {
@@ -86,21 +86,6 @@ export default function ContactFormWithSocialButtons() {
                     isRound
                   />
                 </Tooltip>
-
-                <Box as="a" href="#">
-                  <IconButton
-                    aria-label="github"
-                    variant="ghost"
-                    size="lg"
-                    fontSize="3xl"
-                    icon={<BsGithub />}
-                    _hover={{
-                      bg: 'blue.500',
-                      color: useColorModeValue('white', 'gray.700'),
-                    }}
-                    isRound
-                  />
-                </Box>
 
                 <Box as="a" href="#">
                   <IconButton
