@@ -1,6 +1,5 @@
 import AboutHero from '@/components/AboutHero'
 import AboutUs from '@/components/AboutUs'
-import ContactHero from '@/components/ContactHero'
 import Faq from '@/components/Faq'
 import React from 'react'
 

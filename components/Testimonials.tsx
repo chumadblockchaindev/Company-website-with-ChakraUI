@@ -113,8 +113,7 @@ export default function Testimonials() {
             <TestimonialContent>
               <TestimonialHeading>Efficient Collaborating</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed
-                imperdiet nibh lectus feugiat nunc sem.
+              I've never experienced anything like it! The Deutchkleen team delivered exceptional service that exceeded my expectations in every way. Their attention to detail, responsiveness, and expertise have earned them a customer for life!
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -129,8 +128,7 @@ export default function Testimonials() {
             <TestimonialContent>
               <TestimonialHeading>Intuitive Design</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed
-                imperdiet nibh lectus feugiat nunc sem.
+              I've tried several Elmusion paint producers before, but none have come close to the Intuitive Design I received from Deutchkleen. Their team truly understands the meaning of exceptional customer care. Five stars aren't enough – I'd give them ten!
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -145,8 +143,7 @@ export default function Testimonials() {
             <TestimonialContent>
               <TestimonialHeading>Mindblowing Service</TestimonialHeading>
               <TestimonialText>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor neque sed
-                imperdiet nibh lectus feugiat nunc sem.
+              From start to finish, Deutchkleen provided mindblowing service that left me speechless. Their dedication, professionalism, and results-oriented approach made all the difference. I highly recommend them to anyone seeking top-notch support!
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar

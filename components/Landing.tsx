@@ -9,7 +9,7 @@ import {
   Stack,
   Text,
   useBreakpointValue,
-} from '@chakra-ui/react'
+} from '@chakra-ui/react';
 
 export default function Landing() {
   return (
@@ -60,7 +60,7 @@ export default function Landing() {
           alt={'Login Image'}
           objectFit={'cover'}
           src={
-            'https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
+            'https://i.ibb.co/CnD0TBV/photo-6.jpg'
           }
         />
       </Flex>

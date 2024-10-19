@@ -21,10 +21,10 @@ import {
   ChevronDownIcon,
   ChevronRightIcon,
 } from '@chakra-ui/icons'
+import { usePathname } from 'next/navigation'
 
 export default function NavBar() {
-  const { isOpen, onToggle } = useDisclosure()
-
+  const { isOpen, onToggle } = useDisclosure();
   return (
     <Box>
       <Flex
@@ -36,7 +36,8 @@ export default function NavBar() {
         borderBottom={1}
         borderStyle={'solid'}
         borderColor={useColorModeValue('gray.200', 'gray.900')}
-        align={'center'}>
+        align={'center'}
+        >
         <Flex
           flex={{ base: 1, md: 'auto' }}
           ml={{ base: -2 }}
@@ -48,7 +49,7 @@ export default function NavBar() {
             aria-label={'Toggle Navigation'}
           />
         </Flex>
-        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'center' }}>
+        <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'center' }} align={'center'}>
           <Text
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
@@ -77,43 +78,48 @@ const DesktopNav = () => {
 
   return (
     <Stack direction={'row'} spacing={4}>
-      {NAV_ITEMS.map((navItem) => (
-        <Box key={navItem.label}>
-          <Popover trigger={'hover'} placement={'bottom-start'}>
-            <PopoverTrigger>
-              <Box
-                as="a"
-                p={2}
-                href={navItem.href ?? '#'}
-                fontSize={'sm'}
-                fontWeight={500}
-                color={linkColor}
-                _hover={{
-                  textDecoration: 'none',
-                  color: linkHoverColor,
-                }}>
-                {navItem.label}
-              </Box>
-            </PopoverTrigger>
+      {NAV_ITEMS.map((navItem) => {
+        const pathName = usePathname();
+        const isActive = navItem.href === pathName
 
-            {navItem.children && (
-              <PopoverContent
-                border={0}
-                boxShadow={'xl'}
-                bg={popoverContentBgColor}
-                p={4}
-                rounded={'xl'}
-                minW={'sm'}>
-                <Stack>
-                  {navItem.children.map((child) => (
-                    <DesktopSubNav key={child.label} {...child} />
-                  ))}
-                </Stack>
-              </PopoverContent>
-            )}
-          </Popover>
-        </Box>
-      ))}
+        return(
+          <Box key={navItem.label}>
+            <Popover trigger={'hover'} placement={'bottom-start'}>
+              <PopoverTrigger>
+                <Box
+                  as="a"
+                  p={2}
+                  href={navItem.href ?? '#'}
+                  fontSize={'sm'}
+                  fontWeight={500}
+                  color={isActive ? 'blue.400': linkColor}
+                  _hover={{
+                    textDecoration: 'none',
+                    color: linkHoverColor,
+                  }}>
+                  {navItem.label}
+                </Box>
+              </PopoverTrigger>
+  
+              {navItem.children && (
+                <PopoverContent
+                  border={0}
+                  boxShadow={'xl'}
+                  bg={popoverContentBgColor}
+                  p={4}
+                  rounded={'xl'}
+                  minW={'sm'}>
+                  <Stack>
+                    {navItem.children.map((child) => (
+                      <DesktopSubNav key={child.label} {...child} />
+                    ))}
+                  </Stack>
+                </PopoverContent>
+              )}
+            </Popover>
+          </Box>
+        )
+      } )}
     </Stack>
   )
 }
@@ -229,26 +235,26 @@ const NAV_ITEMS: Array<NavItem> = [
       {
         label: 'Paints',
         subLabel: 'We have quality emulsion paints',
-        href: 'paints',
+        href: '/paints',
       },
       {
         label: 'Cosmetics',
         subLabel: 'Explore our Shear Butter cream etc...',
-        href: 'cosmetics',
+        href: '/cosmetics',
       },
       {
         label: 'German Floor',
         subLabel: 'Trending Design to inspire you',
-        href: 'germanfloor',
+        href: '/germanfloor',
       },
     ],
   },
   {
     label: 'About us',
-    href: 'about',
+    href: '/about',
   },
   {
     label: 'Contact us',
-    href: 'contact',
+    href: '/contact',
   },
 ]
