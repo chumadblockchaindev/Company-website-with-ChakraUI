@@ -26,7 +26,7 @@ export default function ContactHero() {
             We are one step away. We are waiting to hear from you
           </Text>
           <Stack direction={'row'}>
-          <Link href='tel:+2348146713420' isExternal>
+          <Link href='tel:+2348033819122' isExternal>
             <Button
                 bg={'orange.400'}
                 rounded={'full'}
