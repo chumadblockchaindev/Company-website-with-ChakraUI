@@ -45,11 +45,6 @@ const imageGallery = [
   { 
     title: "",
     text: "",
-    image: '/photo_20.jpg'
-  },
-  { 
-    title: "",
-    text: "",
     image: '/photo_21.jpg'
   },
   { 

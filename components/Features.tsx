@@ -87,19 +87,19 @@ export default function Features() {
             heading={'Perfumes'}
             icon={<Image src='/photo_14.jpg' alt='#'/>}
             description={' Indulge in our luxurious perfumes, crafted with care to offer long-lasting, exquisite fragrances that suit every personality and occasion..'}
-            href={'cosmetic#perfume'}
+            href={'cosmetic'}
           />
           <Card
             heading={'Shea Butter'}
             icon={<Image src='/photo_21.jpg' alt='#'/>}
             description={'Our organic shea butter is a natural, nourishing moisturizer perfect for all skin types. Experience the richness and rejuvenation of our pure, unrefined shea butter.'}
-            href={'cosmetics#cream'}
+            href={'cosmetics'}
           />
           <Card
             heading={'Skin Cream'}
             icon={<Image src='/photo_202.jpg' alt='#'/>}
             description={'Keep your skin healthy and vibrant with our specially formulated skin creams. Designed to nourish and strengthen, our skin cream is suitable for all skin types.'}
-            href={'cosmetics#cream'}
+            href={'cosmetics'}
           />
           <Card
             heading={'Increte Flooring'}

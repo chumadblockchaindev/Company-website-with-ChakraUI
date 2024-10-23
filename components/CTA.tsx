@@ -43,7 +43,7 @@ export default function CTA() {
             <chakra.h2 fontSize="3xl" fontWeight="700" textAlign="center">
               Would you like our service?
             </chakra.h2>
-            <Link href='https://wa.me/+2348146713420' isExternal>
+            <Link href='https://wa.me/+2348033819122' isExternal>
                 <Button colorScheme="green" size="md">
                 Chat us on Whatsapp
                 </Button>

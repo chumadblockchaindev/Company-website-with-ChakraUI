@@ -35,7 +35,7 @@ export default function ContactHero() {
                 Call us Now
               </Button>
           </Link>
-          <Link href='https://wa.me/+2348146713420' isExternal>
+          <Link href='https://wa.me/+2348033819122' isExternal>
             <Button
                 bg={'slateblue'}
                 rounded={'full'}

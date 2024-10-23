@@ -44,7 +44,7 @@ export default function AboutFlooring() {
             <chakra.h2 fontSize="3xl" fontWeight="700">
               Tough Durable Flooring
             </chakra.h2>
-            <Link href='https://wa.me/+2348146713420' isExternal>
+            <Link href='https://wa.me/+2348033819122' isExternal>
               <Button colorScheme="green" size="md">
                 Chat on Whatsapp
               </Button>
