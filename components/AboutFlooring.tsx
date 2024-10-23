@@ -29,7 +29,7 @@ const Feature = ({ heading, text }: FeatureProps) => {
   )
 }
 
-export default function AboutProd() {
+export default function AboutFlooring() {
   return (
     <Box as={Container} maxW="7xl" mt={14} p={4}>
       <Grid
@@ -42,7 +42,7 @@ export default function AboutProd() {
         <GridItem colSpan={1}>
           <VStack alignItems="flex-start" spacing="20px">
             <chakra.h2 fontSize="3xl" fontWeight="700">
-              High Quality Paint
+              Tough Durable Flooring
             </chakra.h2>
             <Link href='https://wa.me/+2348146713420' isExternal>
               <Button colorScheme="green" size="md">
@@ -53,8 +53,10 @@ export default function AboutProd() {
         </GridItem>
         <GridItem>
           <Flex>
-            <chakra.p>             
-              Durability and resistance are at the heart in our production of paint, engineered to withstand harsh environmental factors while maintaining a perfect finish. Our paints is designed to deliver superior coverage, long-lasting color, and a flawless finish for both residential and commercial projects.
+            <chakra.p>
+              We Provide our customers a story they would enjoy keeping in mind by giving them the best
+              when it comes to incret flooring also known as german floor and 3D flooring. 
+              We pay special attention to the environment and give make sure our exceed every expections 
             </chakra.p>
           </Flex>
         </GridItem>
@@ -69,24 +71,12 @@ export default function AboutProd() {
         }}
         gap={{ base: '8', sm: '12', md: '16' }}>
         <Feature
-          heading={'Emulsion Paints'}
-          text={'Our premium line of paints is designed to deliver superior coverage, long-lasting color, and a flawless finish for both residential and commercial projects.'}
+          heading={'Increte Flooring'}
+          text={'Our increte flooring solutions offer a durable, customizable, and beautiful finish, perfect for both residential and commercial spaces.'}
         />
         <Feature
-          heading={'Marine Paints'}
-          text={'Durability and resistance are at the heart of our marine paints, engineered to withstand harsh marine environments while maintaining a perfect finish.'}
-        />
-        <Feature
-          heading={'Screeding Paint'}
-          text={'Achieve a smooth, perfect surface for all your building needs with our screeding paints, providing excellent coverage and durability.'}
-        />
-        <Feature
-          heading={'Thinner'}
-          text={'Our high-quality thinners ensure a smooth and even application for all your painting projects, making them a must-have for professionals and DIY enthusiasts alike.'}
-        />
-        <Feature
-          heading={'House Painters'}
-          text={'Looking for expert painters? Our team of skilled house painters is here to bring your vision to life with precision and care.'}
+          heading={'3D Flooring'}
+          text={'Transform any space with our stunning 3D flooring solutions, providing an immersive, modern aesthetic that makes a bold statement.'}
         />
       </Grid>
     </Box>

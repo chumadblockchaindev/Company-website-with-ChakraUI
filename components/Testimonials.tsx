@@ -118,10 +118,10 @@ export default function Testimonials() {
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+                '/nwodo.jpg'
               }
-              name={'Peter Chibuike'}
-              title={'CFO Igem Designs'}
+              name={'Mr Nwodo'}
+              title={'Kings Communication'}
             />
           </Testimonial>
           <Testimonial>
@@ -133,7 +133,7 @@ export default function Testimonials() {
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+                '/chukwuma.jpg'
               }
               name={'Chukwuma Ezenobi'}
               title={'CEO at Chukez Logistics'}
@@ -148,10 +148,10 @@ export default function Testimonials() {
             </TestimonialContent>
             <TestimonialAvatar
               src={
-                'https://images.unsplash.com/photo-1586297135537-94bc9ba060aa?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80'
+                '/vivian.jpg'
               }
-              name={'Micheal Okopi'}
-              title={'Emmanuel Foundation'}
+              name={'Vivian'}
+              title={'Vivan Coultures'}
             />
           </Testimonial>
         </Stack>

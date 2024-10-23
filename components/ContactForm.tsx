@@ -21,6 +21,7 @@ import {
 } from '@chakra-ui/react'
 import { BsLinkedin, BsPerson, BsTwitter } from 'react-icons/bs'
 import { MdEmail, MdOutlineEmail } from 'react-icons/md'
+import { useToast } from '@chakra-ui/react'
 
 const confetti = {
   light: {
@@ -39,6 +40,17 @@ const CONFETTI_DARK = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2
 
 export default function ContactFormWithSocialButtons() {
   const { hasCopied, onCopy } = useClipboard('example@example.com')
+  const toast = useToast()
+
+  const handleSubmit = async () => {
+    toast({
+      title: 'Message Sent',
+      description: "Our team would get back to you shortly",
+      status: 'success',
+      duration: 9000,
+      isClosable: true,
+  })
+  }
 
   return (
     <Flex
@@ -122,51 +134,54 @@ export default function ContactFormWithSocialButtons() {
                 p={8}
                 color={useColorModeValue('gray.700', 'whiteAlpha.900')}
                 shadow="base">
-                <VStack spacing={5}>
-                  <FormControl isRequired>
-                    <FormLabel>Name</FormLabel>
+              <form onSubmit={handleSubmit}>
+                  <VStack spacing={5}>
+                    <FormControl isRequired>
+                      <FormLabel>Name</FormLabel>
 
-                    <InputGroup>
-                      <InputLeftElement>
-                        <BsPerson />
-                      </InputLeftElement>
-                      <Input type="text" name="name" placeholder="Your Name" />
-                    </InputGroup>
-                  </FormControl>
+                      <InputGroup>
+                        <InputLeftElement>
+                          <BsPerson />
+                        </InputLeftElement>
+                        <Input type="text" name="name" placeholder="Your Name" />
+                      </InputGroup>
+                    </FormControl>
 
-                  <FormControl isRequired>
-                    <FormLabel>Email</FormLabel>
+                    <FormControl isRequired>
+                      <FormLabel>Email</FormLabel>
 
-                    <InputGroup>
-                      <InputLeftElement>
-                        <MdOutlineEmail />
-                      </InputLeftElement>
-                      <Input type="email" name="email" placeholder="Your Email" />
-                    </InputGroup>
-                  </FormControl>
+                      <InputGroup>
+                        <InputLeftElement>
+                          <MdOutlineEmail />
+                        </InputLeftElement>
+                        <Input type="email" name="email" placeholder="Your Email" />
+                      </InputGroup>
+                    </FormControl>
 
-                  <FormControl isRequired>
-                    <FormLabel>Message</FormLabel>
+                    <FormControl isRequired>
+                      <FormLabel>Message</FormLabel>
 
-                    <Textarea
-                      name="message"
-                      placeholder="Your Message"
-                      rows={6}
-                      resize="none"
-                    />
-                  </FormControl>
+                      <Textarea
+                        name="message"
+                        placeholder="Your Message"
+                        rows={6}
+                        resize="none"
+                      />
+                    </FormControl>
 
-                  <Button
-                    colorScheme="blue"
-                    bg="blue.400"
-                    color="white"
-                    _hover={{
-                      bg: 'blue.500',
-                    }}
-                    width="full">
-                    Send Message
-                  </Button>
-                </VStack>
+                    <Button
+                      colorScheme="blue"
+                      bg="blue.400"
+                      color="white"
+                      _hover={{
+                        bg: 'blue.500',
+                      }}
+                      type='submit'
+                      width="full">
+                      Send Message
+                    </Button>
+                  </VStack>
+              </form>
               </Box>
             </Stack>
           </VStack>

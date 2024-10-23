@@ -1,6 +1,6 @@
 'use client'
 
-import { Stack, Flex, Button, Text, VStack, useBreakpointValue } from '@chakra-ui/react'
+import { Stack, Flex, Button, Text, VStack, useBreakpointValue, Link } from '@chakra-ui/react'
 
 export default function ContactHero() {
   return (
@@ -26,20 +26,24 @@ export default function ContactHero() {
             We are one step away. We are waiting to hear from you
           </Text>
           <Stack direction={'row'}>
+          <Link href='tel:+2348146713420' isExternal>
             <Button
-              bg={'orange.400'}
-              rounded={'full'}
-              color={'white'}
-              _hover={{ bg: 'blue.500' }}>
-              Call us Now
-            </Button>
+                bg={'orange.400'}
+                rounded={'full'}
+                color={'white'}
+                _hover={{ bg: 'blue.500' }}>
+                Call us Now
+              </Button>
+          </Link>
+          <Link href='https://wa.me/+2348146713420' isExternal>
             <Button
-              bg={'slateblue'}
-              rounded={'full'}
-              color={'white'}
-              _hover={{ bg: 'whiteAlpha.500' }}>
-              Chat us on Whatsapp
-            </Button>
+                bg={'slateblue'}
+                rounded={'full'}
+                color={'white'}
+                _hover={{ bg: 'whiteAlpha.500' }}>
+                Chat us on Whatsapp
+              </Button>
+          </Link>
           </Stack>
         </Stack>
       </VStack>

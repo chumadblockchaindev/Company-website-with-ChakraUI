@@ -7,6 +7,7 @@ import {
   Flex,
   Heading,
   Image,
+  Link,
   Stack,
   Text,
   useColorModeValue,
@@ -46,9 +47,11 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
             {description}
           </Text>
         </Box>
-        <Button variant={'link'} colorScheme={'blue'} size={'sm'}>
-          Learn more
-        </Button>
+        <Link href={href}>
+          <Button variant={'link'} colorScheme={'blue'} size={'sm'} >
+            Learn more
+          </Button>
+        </Link>
       </Stack>
     </Box>
   )
@@ -56,7 +59,7 @@ const Card = ({ heading, description, icon, href }: CardProps) => {
 
 export default function Features() {
   return (
-    <Box p={4}>
+    <Box p={4} className='mt-10'>
       <Stack spacing={4} as={Container} maxW={'3xl'} textAlign={'center'}>
         <Heading fontSize={{ base: '2xl', sm: '4xl' }} fontWeight={'bold'}>
         Excellence in Production & Manufacturing
@@ -70,33 +73,39 @@ export default function Features() {
         <Flex flexWrap="wrap" gridGap={6} justify="center">
           <Card
             heading={'STFLUX PAINTS'}
-            icon={<Image src='https://i.ibb.co/fNvBt55/photo-10.jpg' alt='#'/>}
+            icon={<Image src='/photo_10.jpg' alt='#'/>}
             description={'Discover the exceptional quality of Steflux Paints, offering a range of colors and finishes that provide superior coverage and.'}
-            href={'#'}
+            href='paints'
+          />
+          <Card
+            heading={'WALL PAINTING'}
+            icon={<Image src='/photo_51.jpg' alt='#'/>}
+            description={'Looking for expert painters? Our team of skilled house painters is here to bring your vision to life with precision and care.'}
+            href={'paint#painting'}
           />
           <Card
             heading={'Perfumes'}
-            icon={<Image src='https://i.ibb.co/P5J15Tj/photo-34.jpg' alt='#'/>}
+            icon={<Image src='/photo_14.jpg' alt='#'/>}
             description={' Indulge in our luxurious perfumes, crafted with care to offer long-lasting, exquisite fragrances that suit every personality and occasion..'}
-            href={'#'}
+            href={'cosmetic#perfume'}
           />
           <Card
             heading={'Shea Butter'}
-            icon={<Image src='https://i.ibb.co/zXk2VM2/photo-22.jpg' alt='#'/>}
+            icon={<Image src='/photo_21.jpg' alt='#'/>}
             description={'Our organic shea butter is a natural, nourishing moisturizer perfect for all skin types. Experience the richness and rejuvenation of our pure, unrefined shea butter.'}
-            href={'#'}
+            href={'cosmetics#cream'}
           />
           <Card
             heading={'Skin Cream'}
-            icon={<Image src='https://i.ibb.co/19VTdqb/photo-20.jpg' alt='#'/>}
+            icon={<Image src='/photo_202.jpg' alt='#'/>}
             description={'Keep your skin healthy and vibrant with our specially formulated skin creams. Designed to nourish and strengthen, our skin cream is suitable for all skin types.'}
-            href={'#'}
+            href={'cosmetics#cream'}
           />
           <Card
             heading={'Increte Flooring'}
-            icon={<Image src='https://i.ibb.co/JjCGvn3/photo-13.jpg' alt='#'/>}
+            icon={<Image src='/photo_13.jpg' alt='#'/>}
             description={'Transform your floors with our high-quality increte flooring solutions. Durable and stylish, our increte flooring adds beauty and longevity to any space.'}
-            href={'#'}
+            href={'germanfloor'}
           />
         </Flex>
       </Container>

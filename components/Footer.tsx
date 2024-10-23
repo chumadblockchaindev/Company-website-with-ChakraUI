@@ -13,8 +13,9 @@ import {
   useColorModeValue,
 } from '@chakra-ui/react'
 import { ReactNode } from 'react'
-import { FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
 import { BiMailSend } from 'react-icons/bi'
+import { useToast } from '@chakra-ui/react'
 
 const Logo = (props: any) => {
   return (
@@ -71,6 +72,18 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 }
 
 export default function Footer() {
+  const toast = useToast();
+
+  const handleSubmit = async () => {
+    toast({
+      title: 'Subscribed Successfully',
+      description: "You'll get updates on our new offers",
+      status: 'success',
+      duration: 9000,
+      isClosable: true,
+  })
+  }
+
   return (
     <Box
       bg={useColorModeValue('gray.50', 'gray.900')}
@@ -86,6 +99,9 @@ export default function Footer() {
             </Box>
             <Text fontSize={'sm'}>© 2024 Deutchkleen Nig. Ltd. All rights reserved</Text>
             <Stack direction={'row'} spacing={6}>
+              <SocialButton label={'FaceBook'} href={'https://web.facebook.com/profile.php?id=100076498991924&locale=en_GB'}>
+                <FaFacebook />
+              </SocialButton>
               <SocialButton label={'Twitter'} href={'#'}>
                 <FaTwitter />
               </SocialButton>
@@ -98,20 +114,20 @@ export default function Footer() {
             </Stack>
           </Stack>
           <Stack align={'flex-start'}>
-            <ListHeader>Company</ListHeader>
-            <Box as="a" href={'#'}>
-              About us
+            <ListHeader>Products</ListHeader>
+            <Box as="a" href={'/cosmetics'}>
+              Cosmetics
             </Box>
-            <Box as="a" href={'#'}>
-              Contact us
+            <Box as="a" href={'/paints'}>
+              Paints
             </Box>
-            <Box as="a" href={'#'}>
-              Testimonials
+            <Box as="a" href={'/germanfloor'}>
+              German Floor
             </Box>
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Support</ListHeader>
-            <Box as="a" href={'#'}>
+            <Box as="a" href={'/contact'}>
               Contact us
             </Box>
             <Box as="a" href={'#'}>
@@ -123,6 +139,7 @@ export default function Footer() {
           </Stack>
           <Stack align={'flex-start'}>
             <ListHeader>Suscribe to our Newsletter</ListHeader>
+            <form onSubmit={handleSubmit}>
             <Stack direction={'row'}>
               <Input
                 placeholder={'Your email address'}
@@ -138,10 +155,12 @@ export default function Footer() {
                 _hover={{
                   bg: 'orange.600',
                 }}
+                type='submit'
                 aria-label="Subscribe"
                 icon={<BiMailSend />}
               />
             </Stack>
+            </form>
           </Stack>
         </SimpleGrid>
       </Container>

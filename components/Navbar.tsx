@@ -54,6 +54,7 @@ export default function NavBar() {
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
             fontSize='2xl'
+            fontWeight={'bold'}
             color={useColorModeValue('slate.800', 'white')}>
             DEUTCHKLEEN
           </Text>
