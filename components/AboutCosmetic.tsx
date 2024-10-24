@@ -95,10 +95,6 @@ export default function AboutCosmetic() {
           text={'Perfect for the dry, windy Harmattan season, our body cream provides deep hydration and soothes dry, cracked skin.'}
         />
         <Feature
-          heading={'Wood Preservatives'}
-          text={'Protect your woodwork with our specialized wood preservatives, designed to prevent decay, rot, and insect damage, ensuring longevity.'}
-        />
-        <Feature
           heading={'Aftershave'}
           text={'Stay fresh and smooth with our refreshing aftershave, formulated to soothe the skin and leave you feeling invigorated after every shave.'}
         />

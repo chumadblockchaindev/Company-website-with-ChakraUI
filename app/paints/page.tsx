@@ -102,22 +102,22 @@ const imageGallery = [
     image: '/photo_81.jpg'
   },
   { 
-    title: "Elmusion Painting",
+    title: "Emulsion Painting",
     text: "",
     image: '/photo_73.jpg'
   },
   { 
-    title: "Elmusion Painting",
+    title: "Emulsion Painting",
     text: "",
     image: '/photo_84.jpg'
   },
   { 
-    title: "Elmusion Painting",
+    title: "Emulsion Painting",
     text: "",
     image: '/photo_85.jpg'
   },
   { 
-    title: "Elmusion Painting",
+    title: "Emulsion Painting",
     text: "",
     image: '/photo_86.jpg'
   },

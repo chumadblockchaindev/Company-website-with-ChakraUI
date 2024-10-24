@@ -1,6 +1,9 @@
 import React from 'react'
 
 const Products = [
+  {product: "STEFLUX FLOOR VANISH."},
+  {product: "STEFLUX WOOD VANISH."},
+  {product: "STEFLUX METALIC VANISH."},
    {product: "ShaNet Shear Butter hair cream."},                                          
    {product: "ShaNet Shear Butter body Lotion."},                                
    {product: "ShaNet ANTIDANRUFF HAIR cream."},                            

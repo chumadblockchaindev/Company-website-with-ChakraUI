@@ -88,6 +88,10 @@ export default function AboutProd() {
           heading={'House Painters'}
           text={'Looking for expert painters? Our team of skilled house painters is here to bring your vision to life with precision and care.'}
         />
+        <Feature
+          heading={'Wood Preservatives'}
+          text={'Protect your woodwork with our specialized wood preservatives, designed to prevent decay, rot, and insect damage, ensuring longevity.'}
+        />
       </Grid>
     </Box>
   )
