@@ -22,17 +22,17 @@ const imageGallery = [
     image: '/photo_64.jpg'
   },
   { 
-    title: "Screeding",
+    title: "Crackie paint",
     text: "",
     image: '/photo_67.jpg'
   },
   { 
-    title: "",
+    title: "Gravitex",
     text: "",
     image: '/photo_68.jpg'
   },
   { 
-    title: "Screeding",
+    title: "",
     text: "",
     image: '/photo_4.jpg'
   },
@@ -121,7 +121,14 @@ const imageGallery = [
     text: "",
     image: '/photo_86.jpg'
   },
+  { 
+    title: "",
+    text: "",
+    image: '/photo_91.jpg'
+  },
 ]
+
+const videoPath = ['']
 
 const Paints = () => {
   return (
@@ -129,7 +136,7 @@ const Paints = () => {
       <div>
         <Carousel />
         <AboutProd />
-        <Gallery title='Gallery' gallery={imageGallery}/>
+        <Gallery title='Gallery' gallery={imageGallery} videoPath={videoPath} />
         <CTA />
       </div>
     </section>

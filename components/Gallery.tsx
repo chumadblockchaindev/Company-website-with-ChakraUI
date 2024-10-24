@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
+import Video from './Video'
 
 interface galleryProp {
   title: string,
@@ -7,7 +8,7 @@ interface galleryProp {
   image: string
 }
 
-const Gallery = ({ gallery, title }: {gallery: galleryProp[], title: string}) => {
+const Gallery = ({ gallery, title, videoPath }: {gallery: galleryProp[], title: string, videoPath: Array<string>}) => {
 
   
   return (
@@ -35,6 +36,13 @@ const Gallery = ({ gallery, title }: {gallery: galleryProp[], title: string}) =>
               </div>
             ))
           }
+            {
+              videoPath.map((video, index) => (
+                <div key={index}>
+                  <Video path={video} />
+                </div>
+              ))
+            }
           </div>
         </div>
       </div>

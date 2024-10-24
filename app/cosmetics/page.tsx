@@ -72,11 +72,6 @@ const imageGallery = [
     text: "",
     image: '/photo_90.jpg'
   },
-  { 
-    title: "",
-    text: "",
-    image: '/photo_91.jpg'
-  },
 ]
 
 const Cosmetics = () => {

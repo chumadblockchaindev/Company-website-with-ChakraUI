@@ -81,13 +81,13 @@ export default function Features() {
             heading={'WALL PAINTING'}
             icon={<Image src='/photo_51.jpg' alt='#'/>}
             description={'Looking for expert painters? Our team of skilled house painters is here to bring your vision to life with precision and care.'}
-            href={'paint#painting'}
+            href={'paints'}
           />
           <Card
             heading={'Perfumes'}
             icon={<Image src='/photo_14.jpg' alt='#'/>}
             description={' Indulge in our luxurious perfumes, crafted with care to offer long-lasting, exquisite fragrances that suit every personality and occasion..'}
-            href={'cosmetic'}
+            href={'cosmetics'}
           />
           <Card
             heading={'Shea Butter'}

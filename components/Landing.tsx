@@ -35,7 +35,10 @@ export default function Landing() {
             <br />{' '}
             <Text color={'orange.400'} as={'span'}>
               DEUTCHKLEEN
-            </Text>{' '}
+            </Text>{' '}<br />
+            <p className='text-xs md:text-sm text-orange-400 italic'>
+              We save your money and keep you at the best position
+            </p>{' '}
           </Heading>
           <Text fontSize={{ base: 'md', lg: 'lg' }} color={'gray.500'}>
             At Deutchkleen we expertise in the production and manufacturing solutions for a diverse range of goods and services, trusted by customers nationwide. Our dedication to excellence is evident in the precision and care we put into every product. Explore our wide range of offerings below

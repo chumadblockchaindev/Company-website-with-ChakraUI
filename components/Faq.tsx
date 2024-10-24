@@ -33,7 +33,7 @@ export default function Faq() {
             </AccordionButton>
             <AccordionPanel pb={4}>
               <Text color="gray.600">
-                We expertise in the production and manufacturing solutions for a diverse range of goods and services, trusted by customers nationwide.
+                We expertise in the production and manufacturing solutions for a diverse range of goods and services, trusted by customers worldwide.
               </Text>
             </AccordionPanel>
           </AccordionItem>
@@ -48,7 +48,7 @@ export default function Faq() {
             </AccordionButton>
             <AccordionPanel pb={4}>
               <Text color="gray.600">
-                Paints, Cosmetic, We do german floor... etc
+              Paints, cosmetics, Increte floors, 3D floors, Building and Construction
               </Text>
             </AccordionPanel>
           </AccordionItem>
