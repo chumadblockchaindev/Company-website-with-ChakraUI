@@ -5,7 +5,7 @@ import Video from './Video'
 interface galleryProp {
   title: string,
   text: string,
-  image: string
+  image: string,
 }
 
 const Gallery = ({ gallery, title, videoPath }: {gallery: galleryProp[], title: string, videoPath: Array<string>}) => {

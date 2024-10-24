@@ -74,6 +74,8 @@ const imageGallery = [
   },
 ]
 
+const videoPath = ['']
+
 const Cosmetics = () => {
   return (
     <div>
@@ -81,7 +83,7 @@ const Cosmetics = () => {
       <AboutCosmetic />
       <h1 className="text-center text-3xl font-extrabold p-4">Other Products</h1>
       <OtherProducts />
-      <Gallery title='View our Products' gallery={imageGallery}/>
+      <Gallery title='View our Products' gallery={imageGallery} videoPath={videoPath}/>
       <CTA />
     </div>
   )
