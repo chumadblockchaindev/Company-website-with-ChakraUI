@@ -42,14 +42,34 @@ export default function ContactFormWithSocialButtons() {
   const { hasCopied, onCopy } = useClipboard('example@example.com')
   const toast = useToast()
 
-  const handleSubmit = async () => {
-    toast({
-      title: 'Message Sent',
-      description: "Our team would get back to you shortly",
-      status: 'success',
-      duration: 9000,
-      isClosable: true,
-  })
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+        // post to send-email api
+        try {
+          const formData = new FormData(event.currentTarget);
+          const formValues = Object.fromEntries(formData);
+
+          const res = await fetch('/api/send-email', {
+            method: 'POST',
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(formValues)
+          });
+
+          if(res.status === 200){
+              toast({
+                title: 'Message Sent',
+                description: "You'll receive a confirmation email from us shortly",
+                status: 'success',
+                duration: 9000,
+                isClosable: true,
+            });
+          }  
+          // reset form field
+        } catch (error) {
+          console.error(error);
+        }
   }
 
   return (
@@ -143,7 +163,8 @@ export default function ContactFormWithSocialButtons() {
                         <InputLeftElement>
                           <BsPerson />
                         </InputLeftElement>
-                        <Input type="text" name="name" placeholder="Your Name" />
+                        <Input type="text" name="name" placeholder="Your Name" 
+                        />
                       </InputGroup>
                     </FormControl>
 
@@ -154,7 +175,8 @@ export default function ContactFormWithSocialButtons() {
                         <InputLeftElement>
                           <MdOutlineEmail />
                         </InputLeftElement>
-                        <Input type="email" name="email" placeholder="Your Email" />
+                        <Input type="email" name="email" placeholder="Your Email" 
+                        />
                       </InputGroup>
                     </FormControl>
 

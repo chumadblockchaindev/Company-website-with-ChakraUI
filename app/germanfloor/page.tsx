@@ -71,14 +71,24 @@ const imageGallery = [
     image: '/3d8.jpg'
   },
   { 
-    title: "",
+    title: "Incret Wall Design",
     text: "",
     image: '/incret1.jpg'
   },
   { 
-    title: "",
+    title: "Incret Wall Design",
     text: "",
     image: '/incret2.jpg'
+  },
+  { 
+    title: "",
+    text: "",
+    image: '/incret15.jpg'
+  },
+  { 
+    title: "",
+    text: "",
+    image: '/incret20.jpg'
   },
   { 
     title: "",
@@ -107,7 +117,7 @@ const imageGallery = [
   },
 ]
 
-const videoPath = ['/3d1.mp4', '/3d2.mp4', '/screedingvid.mp4']
+const videoPath = ['/germanfloor.mp4','/3d1.mp4', '/3d2.mp4', '/screedingvid.mp4']
 
 const GermanFloor = () => {
   return (

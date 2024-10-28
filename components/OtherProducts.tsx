@@ -6,7 +6,7 @@ const Products = [
   {product: "STEFLUX METALIC VANISH."},
    {product: "ShaNet Shear Butter hair cream."},                                          
    {product: "ShaNet Shear Butter body Lotion."},                                
-   {product: "ShaNet ANTIDANRUFF HAIR cream."},                            
+   {product: "ShaNet ANTIDANDRUFF HAIR cream."},                            
    {product: "ShaNet Body Jell."},                
    {product: "ShaNet Tablet Soap."},            
     {product: "ShaNet Liquid detergent."},      

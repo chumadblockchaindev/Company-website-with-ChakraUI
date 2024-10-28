@@ -11,6 +11,7 @@ import {
   Input,
   IconButton,
   useColorModeValue,
+  FormControl,
 } from '@chakra-ui/react'
 import { ReactNode } from 'react'
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa'
@@ -74,14 +75,34 @@ const ListHeader = ({ children }: { children: ReactNode }) => {
 export default function Footer() {
   const toast = useToast();
 
-  const handleSubmit = async () => {
-    toast({
-      title: 'Subscribed Successfully',
-      description: "You'll get updates on our new offers",
-      status: 'success',
-      duration: 9000,
-      isClosable: true,
-  })
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    // post to send-email api
+    try {
+      const formData = new FormData();
+      const email = formData.get('email');
+
+      const res = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email })
+      })
+      .then(() => {
+                toast({
+                  title: 'Subscribed Successfully',
+                  description: "You'll get updates on our new offers",
+                  status: 'success',
+                  duration: 9000,
+                  isClosable: true,
+              });
+            })
+            // reset form
+          } catch (error) {
+      console.error(error);
+    }
   }
 
   return (
@@ -141,7 +162,9 @@ export default function Footer() {
             <ListHeader>Suscribe to our Newsletter</ListHeader>
             <form onSubmit={handleSubmit}>
             <Stack direction={'row'}>
+            <FormControl isRequired>
               <Input
+                name='email'
                 placeholder={'Your email address'}
                 bg={useColorModeValue('blackAlpha.100', 'whiteAlpha.100')}
                 border={0}
@@ -149,6 +172,7 @@ export default function Footer() {
                   bg: 'whiteAlpha.300',
                 }}
               />
+            </FormControl>
               <IconButton
                 bg={useColorModeValue('orange.400', 'orange.800')}
                 color={useColorModeValue('white', 'gray.800')}

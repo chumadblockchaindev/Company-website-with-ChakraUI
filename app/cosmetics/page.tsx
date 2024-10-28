@@ -35,7 +35,7 @@ const imageGallery = [
   { 
     title: "",
     text: "",
-    image: '/photo_16.jpg'
+    image: '/perfumeimg1.jpg'
   },
   { 
     title: "",

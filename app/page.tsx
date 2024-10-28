@@ -10,7 +10,7 @@ export default function Home() {
     <div>
       <Landing />
       <Features />
-      <h1 className="text-center text-3xl font-extrabold p-6">Cosmetic Products</h1>
+      <h1 className="text-center text-3xl font-extrabold p-6">Cosmetic / Household Products</h1>
       <OtherProducts />
       <h1 className="text-center text-3xl font-extrabold p-6">Why Choose Us?</h1>
       <Features2 />

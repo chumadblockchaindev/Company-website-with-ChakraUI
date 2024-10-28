@@ -239,12 +239,12 @@ const NAV_ITEMS: Array<NavItem> = [
         href: '/paints',
       },
       {
-        label: 'Cosmetics',
+        label: 'Cosmetics & Household Products',
         subLabel: 'Explore our Shear Butter cream etc...',
         href: '/cosmetics',
       },
       {
-        label: 'German Floor',
+        label: 'Increte & 3D floors',
         subLabel: 'Trending Design to inspire you',
         href: '/germanfloor',
       },
